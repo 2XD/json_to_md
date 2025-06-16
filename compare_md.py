@@ -6,7 +6,7 @@ from markitdown import MarkItDown
 def extract_html_from_json(filename):
     with open(filename, 'r', encoding='utf-8') as f:
         data = json.load(f)
-    # Extract HTML from nested keys based on your JSON structure
+    # Extract HTML based on how the rest api works
     return data["body"]["storage"]["value"]
 
 def main():
